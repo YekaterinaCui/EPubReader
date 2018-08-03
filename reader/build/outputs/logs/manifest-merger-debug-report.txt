@@ -1,0 +1,321 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+	package
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:4:5-36
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:1-229:12
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:7:22-65
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:12:22-68
+uses-permission#android.permission.INTERNET
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:14:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:15:22-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:16:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:18:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:21:22-62
+uses-feature#android.hardware.camera
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:22:5-60
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:22:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:23:5-70
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:23:19-67
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:24:5-69
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:24:22-66
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:25:5-65
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:25:22-63
+application
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:26:5-228:19
+	android:label
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:27:9-41
+	tools:ignore
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:29:9-35
+	android:theme
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:28:9-40
+activity#com.koolearn.android.kooreader.KooReader
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:31:9-143:20
+	android:label
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:34:13-45
+	android:launchMode
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:35:13-44
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:33:13-74
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:32:13-68
+intent-filter#action:name:android.kooreader.action.VIEW+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:36:13-39:29
+action#android.kooreader.action.VIEW
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:37:17-72
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:37:25-69
+category#android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:38:27-73
+intent-filter#action:name:android.kooreader.action.VIEW+category:name:android.intent.category.DEFAULT+data:scheme:file
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:40:13-44:29
+data
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:43:17-47
+	android:host
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:60:21-36
+	android:scheme
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:43:23-44
+	android:pathPattern
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:62:23-54
+	android:mimeType
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:82:21-50
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:scheme:kooreader-action
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:45:13-49:29
+action#android.intent.action.VIEW
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:46:17-69
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:46:25-66
+intent-filter#action:name:android.kooreader.action.PLUGIN+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:50:13-53:29
+action#android.kooreader.action.PLUGIN
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:51:17-74
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:51:25-71
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:+data:pathPattern:.*\\.epub+data:scheme:file
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:55:13-75:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:host:+data:mimeType:text/plain+data:pathPattern:.*\\.epub+data:scheme:file
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:76:13-96:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:+data:mimeType:application/epub+zip+data:scheme:file
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:103:13-127:29
+category#android.intent.category.BROWSABLE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:107:17-78
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:107:27-75
+intent-filter#action:name:android.intent.action.SEARCH
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:129:13-131:29
+action#android.intent.action.SEARCH
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:130:17-71
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:130:25-68
+meta-data#android.app.searchable
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:132:13-134:54
+	android:resource
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:134:17-51
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:133:17-54
+intent-filter#action:name:android.kooreader.action.CLOSE+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:135:13-138:29
+action#android.kooreader.action.CLOSE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:136:17-73
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:136:25-70
+intent-filter#action:name:android.kooreader.action.PLUGIN_CRASH+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:139:13-142:29
+action#android.kooreader.action.PLUGIN_CRASH
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:140:17-80
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:140:25-77
+activity#com.koolearn.android.kooreader.TOCActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:144:9-146:77
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:146:13-74
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:145:13-70
+activity#com.koolearn.android.kooreader.preferences.PreferenceActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:147:9-160:20
+	android:process
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:150:13-43
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:149:13-74
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:148:13-89
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:scheme:kooreader-preferences
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:151:13-155:29
+intent-filter#action:name:android.kooreader.action.PREFERENCES+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:156:13-159:29
+action#android.kooreader.action.PREFERENCES
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:157:17-79
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:157:25-76
+activity#com.koolearn.klibrary.ui.android.error.BugReportActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:161:9-166:40
+	android:process
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:166:13-37
+	android:label
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:165:13-44
+	android:exported
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:164:13-37
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:163:13-74
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:162:13-84
+activity#com.koolearn.android.kooreader.library.LibraryActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:167:9-176:20
+	android:process
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:171:13-39
+	android:launchMode
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:170:13-44
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:169:13-74
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:168:13-82
+intent-filter#action:name:android.kooreader.action.LIBRARY+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:172:13-175:29
+action#android.kooreader.action.LIBRARY
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:173:17-75
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:173:25-72
+activity#com.ninestars.DialogActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:177:9-179:45
+	android:launchMode
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:179:13-43
+	android:theme
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:178:13-48
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:177:19-62
+activity#com.koolearn.android.kooreader.bookmark.EditBookmarkActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:180:9-188:20
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:182:13-74
+	android:theme
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:183:13-52
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:181:13-88
+intent-filter#action:name:android.fbreader.action.EDIT_BOOKMARK+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:184:13-187:29
+action#android.fbreader.action.EDIT_BOOKMARK
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:185:17-80
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:185:25-77
+activity#com.koolearn.android.kooreader.bookmark.EditStyleActivity
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:189:9-197:20
+	android:configChanges
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:191:13-74
+	android:theme
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:192:13-52
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:190:13-85
+intent-filter#action:name:android.fbreader.action.EDIT_STYLES+category:name:android.intent.category.DEFAULT
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:193:13-196:29
+action#android.fbreader.action.EDIT_STYLES
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:194:17-78
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:194:25-75
+service#com.koolearn.android.kooreader.libraryService.LibraryService
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:199:9-207:19
+	android:process
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:202:13-46
+	android:launchMode
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:201:13-44
+	tools:ignore
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:203:13-43
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:200:13-88
+intent-filter#action:name:android.kooreader.action.LIBRARY_SERVICE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:204:13-206:29
+action#android.kooreader.action.LIBRARY_SERVICE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:205:17-83
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:205:25-80
+service#com.koolearn.android.kooreader.config.ConfigService
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:208:9-215:19
+	android:process
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:211:13-45
+	android:launchMode
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:210:13-44
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:209:13-79
+intent-filter#action:name:android.kooreader.action.CONFIG_SERVICE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:212:13-214:29
+action#android.kooreader.action.CONFIG_SERVICE
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:213:17-82
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:213:25-79
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:219:9-227:20
+	android:grantUriPermissions
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:223:13-47
+	android:authorities
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:221:13-69
+	android:exported
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:222:13-37
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:220:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:224:13-226:54
+	android:resource
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:226:17-51
+	android:name
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml:225:17-67
+uses-sdk
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		ADDED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
+		INJECTED from /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/AndroidManifest.xml
