@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.koolearn.android.kooreader.api.KooReaderIntents;
 import com.koolearn.android.kooreader.httpd.DataService;
 import com.koolearn.android.kooreader.libraryService.BookCollectionShadow;
@@ -81,7 +82,7 @@ public final class KooReader extends KooReaderMainActivity implements ZLApplicat
 
     final DataService.Connection DataConnection = new DataService.Connection();
 
-    volatile boolean IsPaused = false;
+    volatile boolean isPaused = false;
 //    private volatile long myResumeTimestamp; // 数据同步
 
     private Intent myOpenBookIntent = null;
@@ -155,7 +156,6 @@ public final class KooReader extends KooReaderMainActivity implements ZLApplicat
         if (!EventBus.getDefault().isRegistered(this)){
             EventBus.getDefault().register(this);
         }
-//        EventBus.getDefault().post(new FinishEvent());
         myRootView = (RelativeLayout) findViewById(R.id.root_view);
         myMainView = (ZLAndroidWidget) findViewById(R.id.main_view);
         myCurlView = (ZLAndroidCurlWidget) findViewById(R.id.curl_view);
@@ -178,7 +178,7 @@ public final class KooReader extends KooReaderMainActivity implements ZLApplicat
         myKooReaderApp.setWindow(this);
         myKooReaderApp.initWindow();
 
-        getWindow().setFlags( //y 全屏
+        getWindow().setFlags( //全屏
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN // 设置窗体全屏
         );
@@ -256,7 +256,7 @@ public final class KooReader extends KooReaderMainActivity implements ZLApplicat
 
         registerReceiver(myBatteryInfoReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
 
-        IsPaused = false;
+        isPaused = false;
 //        myResumeTimestamp = System.currentTimeMillis();
         myOpenBookIntent = getIntent();
 //        Bookmark mark = KooReaderIntents.getBookmarkExtra(getIntent());
@@ -273,7 +273,7 @@ public final class KooReader extends KooReaderMainActivity implements ZLApplicat
 
     @Override
     protected void onPause() {
-        IsPaused = true;
+        isPaused = true;
 
         if (myCurlView != null && myCurlView.getVisibility() == View.VISIBLE) {
             myCurlView.onPause();
@@ -281,6 +281,7 @@ public final class KooReader extends KooReaderMainActivity implements ZLApplicat
         try {
             unregisterReceiver(myBatteryInfoReceiver);
         } catch (IllegalArgumentException e) {
+            LogUtils.e(e);
         }
 
         myKooReaderApp.stopTimer();

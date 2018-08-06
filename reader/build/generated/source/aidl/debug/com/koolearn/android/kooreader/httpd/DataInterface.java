@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/aidl/com/koolearn/android/kooreader/httpd/DataInterface.aidl
+ * Original file: /Users/cuijing/dev/workplace_for_android/owner/EPubReader/reader/src/main/aidl/com/koolearn/android/kooreader/httpd/DataInterface.aidl
  */
 package com.koolearn.android.kooreader.httpd;
 public interface DataInterface extends android.os.IInterface

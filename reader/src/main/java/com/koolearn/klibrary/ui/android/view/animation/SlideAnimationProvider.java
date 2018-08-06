@@ -1,7 +1,9 @@
 package com.koolearn.klibrary.ui.android.view.animation;
 
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.GradientDrawable;
 
 import com.koolearn.klibrary.ui.android.view.ViewUtil;
@@ -88,37 +90,38 @@ public final class SlideAnimationProvider extends SimpleAnimationProvider {
         }
     }
 
-//    private void drawBitmapInternal(Canvas canvas, Bitmap bm, int left, int right, int height, int voffset, Paint paint) {
-//        canvas.drawBitmap(
-//                bm,
-//                new Rect(left, 0, right, height),
-//                new Rect(left, voffset, right, voffset + height),
-//                paint
-//        );
-//    }
 
-//    @Override
-//    protected void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
-//        if (myDirection.IsHorizontal) { // 横屏翻阅
-//            final int dX = myEndX - myStartX;
-//            setDarkFilter(dX, myWidth);
-//            final int h = footerBitmap.getHeight();
-//            if (dX > 0) {
-//                drawBitmapInternal(canvas, footerBitmap, 0, dX, h, voffset, myDarkPaint);
-//                drawBitmapInternal(canvas, footerBitmap, dX, myWidth, h, voffset, myPaint);
-//            } else {
-//                drawBitmapInternal(canvas, footerBitmap, myWidth + dX, myWidth, h, voffset, myDarkPaint);
-//                drawBitmapInternal(canvas, footerBitmap, 0, myWidth + dX, h, voffset, myPaint);
-//            }
-//            drawShadowVertical(canvas, voffset, voffset + h, dX);
-//        } else {
-//            final int dY = myEndY - myStartY;
-//            setDarkFilter(dY, myHeight);
-//            if (dY > 0) {
-//                canvas.drawBitmap(footerBitmap, 0, voffset, myPaint); // 竖屏翻页
-//            } else {
-//                canvas.drawBitmap(footerBitmap, 0, voffset, myDarkPaint); // 竖屏翻页
-//            }
-//        }
-//    }
+    private void drawBitmapInternal(Canvas canvas, Bitmap bm, int left, int right, int height, int voffset, Paint paint) {
+        canvas.drawBitmap(
+                bm,
+                new Rect(left, 0, right, height),
+                new Rect(left, voffset, right, voffset + height),
+                paint
+        );
+    }
+
+    @Override
+    protected void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
+        if (myDirection.IsHorizontal) { // 横屏翻阅
+            final int dX = myEndX - myStartX;
+            setDarkFilter(dX, myWidth);
+            final int h = footerBitmap.getHeight();
+            if (dX > 0) {
+                drawBitmapInternal(canvas, footerBitmap, 0, dX, h, voffset, myDarkPaint);
+                drawBitmapInternal(canvas, footerBitmap, dX, myWidth, h, voffset, myPaint);
+            } else {
+                drawBitmapInternal(canvas, footerBitmap, myWidth + dX, myWidth, h, voffset, myDarkPaint);
+                drawBitmapInternal(canvas, footerBitmap, 0, myWidth + dX, h, voffset, myPaint);
+            }
+            drawShadowVertical(canvas, voffset, voffset + h, dX);
+        } else {
+            final int dY = myEndY - myStartY;
+            setDarkFilter(dY, myHeight);
+            if (dY > 0) {
+                canvas.drawBitmap(footerBitmap, 0, voffset, myPaint); // 竖屏翻页
+            } else {
+                canvas.drawBitmap(footerBitmap, 0, voffset, myDarkPaint); // 竖屏翻页
+            }
+        }
+    }
 }

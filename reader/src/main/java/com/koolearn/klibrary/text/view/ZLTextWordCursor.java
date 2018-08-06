@@ -39,6 +39,7 @@ public final class ZLTextWordCursor extends ZLTextPosition {
         myCharIndex = 0;
     }
 
+    // 段落光标为空
     public boolean isNull() {
         return myParagraphCursor == null;
     }
@@ -51,12 +52,14 @@ public final class ZLTextWordCursor extends ZLTextPosition {
         return isStartOfParagraph() && myParagraphCursor.isFirst();
     }
 
+    //是段落结尾
     public boolean isEndOfParagraph() {
         return
                 myParagraphCursor != null &&
                         myElementIndex == myParagraphCursor.getParagraphLength();
     }
 
+    // 是文本末尾
     public boolean isEndOfText() {
         return isEndOfParagraph() && myParagraphCursor.isLast();
     }

@@ -238,16 +238,16 @@ public abstract class AnimationProvider {
         }
     }
 
-//    public final void drawFooterBitmap(Canvas canvas, Bitmap footerBitmap, int voffset) {
-//        setFilter();
-//        drawFooterBitmapInternal(canvas, footerBitmap, voffset);
-//    }
+    public final void drawFooterBitmap(Canvas canvas, Bitmap footerBitmap, int voffset) {
+        setFilter();
+        drawFooterBitmapInternal(canvas, footerBitmap, voffset);
+    }
 
     protected abstract void setFilter();
 
     protected abstract void drawInternal(Canvas canvas);
 
-//    protected abstract void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset);
+    protected abstract void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset);
 
     public abstract ZLViewEnums.PageIndex getPageToScrollTo(int x, int y);
 

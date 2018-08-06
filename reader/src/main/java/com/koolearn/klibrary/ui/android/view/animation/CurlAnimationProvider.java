@@ -29,8 +29,12 @@ public final class CurlAnimationProvider extends AnimationProvider {
 //            0, 0, 0.65f, 0, 90.0f, B
 //            0, 0, 0, 0.3f, 0 }; A
     ColorMatrix cm = new ColorMatrix();
-    float array[] = {0.55f, 0, 0, 0, 80.0f, 0, 0.55f, 0, 0, 80.0f, 0, 0,
-            0.55f, 0, 80.0f, 0, 0, 0, 0.2f, 0};
+    float array[] = {
+            0.55f, 0, 0, 0, 80.0f,
+            0, 0.55f, 0, 0, 80.0f,
+            0, 0, 0.55f, 0, 80.0f,
+            0, 0, 0, 0.2f, 0
+    };
 
     private float mySpeedFactor = 1;
 
@@ -102,41 +106,40 @@ public final class CurlAnimationProvider extends AnimationProvider {
             final int oppositeY = Math.abs(myHeight - cornerY);
             int x;
             final int y;
-//            if (cornerX == 0) {
-//                x = Math.max(1, Math.min(myWidth / 2, myEndX));
-//            } else {
-//                x = Math.max(myWidth / 2, Math.min(myWidth - 1, myEndX));
-//            }
-            x = myEndX;
-//            if (getMode().Auto) { // 松手后变为true
-//                if (cornerY == 0) { // 左上 右上
-//                    /**
-//                     * 在最边时Y最小,最小设为为1,防止出现bug
-//                     * Y最大值为 屏幕高度 / 2
-//                     */
-//                    y = Math.max(1, Math.min(myHeight / 4, myEndY));
-//                } else { // 左下 右下
-//                    /**
-//                     * 在最下面时Y最大,最大设为屏幕高度-1,防止出现bug
-//                     * Y最大值为 屏幕高度 / 2
-//                     */
-//                    y = (int) Math.max(0.75 * myHeight, Math.min(myHeight - 1, myEndY));
-//                }
-//            } else {
-            if (cornerY == 0) { // 左上 右上
-                /**
-                 * 在最边时Y最小,最小设为为1,防止出现bug
-                 * Y最大值为 屏幕高度 / 2
-                 */
-                y = Math.max(1, Math.min(myHeight / 4, myEndY));
-            } else { // 左下 右下
-                /**
-                 * 在最下面时Y最大,最大设为屏幕高度-1,防止出现bug
-                 * Y最大值为 屏幕高度 / 2
-                 */
-                y = (int) Math.max(0.75 * myHeight, Math.min(myHeight - 1, myEndY));
+            if (cornerX == 0) {
+                x = Math.max(1, Math.min(myWidth / 2, myEndX));
+            } else {
+                x = Math.max(myWidth / 2, Math.min(myWidth - 1, myEndX));
             }
-//            }
+            if (getMode().Auto) { // 松手后变为true
+                if (cornerY == 0) { // 左上 右上
+                    /**
+                     * 在最边时Y最小,最小设为为1,防止出现bug
+                     * Y最大值为 屏幕高度 / 2
+                     */
+                    y = Math.max(1, Math.min(myHeight / 4, myEndY));
+                } else { // 左下 右下
+                    /**
+                     * 在最下面时Y最大,最大设为屏幕高度-1,防止出现bug
+                     * Y最大值为 屏幕高度 / 2
+                     */
+                    y = (int) Math.max(0.75 * myHeight, Math.min(myHeight - 1, myEndY));
+                }
+            } else {
+                if (cornerY == 0) { // 左上 右上
+                    /**
+                     * 在最边时Y最小,最小设为为1,防止出现bug
+                     * Y最大值为 屏幕高度 / 2
+                     */
+                    y = Math.max(1, Math.min(myHeight / 4, myEndY));
+                } else { // 左下 右下
+                    /**
+                     * 在最下面时Y最大,最大设为屏幕高度-1,防止出现bug
+                     * Y最大值为 屏幕高度 / 2
+                     */
+                    y = (int) Math.max(0.75 * myHeight, Math.min(myHeight - 1, myEndY));
+                }
+            }
 
             final int dX = Math.max(1, Math.abs(x - cornerX));
             final int dY = Math.max(1, Math.abs(y - cornerY));
@@ -563,10 +566,10 @@ public final class CurlAnimationProvider extends AnimationProvider {
         }
     }
 
-//	@Override
-//	public void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
-//		canvas.drawBitmap(footerBitmap, 0, voffset, myPaint);
-//	}
+    @Override
+    public void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
+        canvas.drawBitmap(footerBitmap, 0, voffset, myPaint);
+    }
 
     @Override
     protected void setFilter() {

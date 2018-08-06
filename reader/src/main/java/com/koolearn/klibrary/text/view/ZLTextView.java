@@ -1906,12 +1906,14 @@ public abstract class ZLTextView extends ZLTextViewBase {
         return myCurrentPage.TextElementMap.nextRegion(getOutlinedRegion(), direction, filter);
     }
 
+    // TODO: 2018/8/5 查看 如何判断是最后一页
     @Override
     public boolean canScroll(ZLViewEnums.PageIndex index) {
         switch (index) {
             default:
                 return true;
             case next: {
+                //获取到最后的光标
                 final ZLTextWordCursor cursor = getEndCursor();
                 return cursor != null && !cursor.isNull() && !cursor.isEndOfText();
             }

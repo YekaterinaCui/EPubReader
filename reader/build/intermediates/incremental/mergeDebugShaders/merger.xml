@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/cuijing/Downloads/EpubRead-master/reader/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/cuijing/Downloads/EpubRead-master/reader/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/cuijing/dev/workplace_for_android/owner/EPubReader/reader/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/cuijing/dev/workplace_for_android/owner/EPubReader/reader/src/debug/shaders"/></dataSet></merger>

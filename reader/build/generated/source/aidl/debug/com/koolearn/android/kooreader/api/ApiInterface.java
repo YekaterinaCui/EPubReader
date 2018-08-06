@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/cuijing/dev/workplace_for_android/owner/EpubRead-master/reader/src/main/aidl/com/koolearn/android/kooreader/api/ApiInterface.aidl
+ * Original file: /Users/cuijing/dev/workplace_for_android/owner/EPubReader/reader/src/main/aidl/com/koolearn/android/kooreader/api/ApiInterface.aidl
  */
 package com.koolearn.android.kooreader.api;
 public interface ApiInterface extends android.os.IInterface

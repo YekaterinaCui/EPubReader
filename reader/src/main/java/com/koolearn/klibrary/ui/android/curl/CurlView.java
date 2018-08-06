@@ -1,19 +1,3 @@
-/*
-   Copyright 2012 Harri Smatt
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
- */
-
 package com.koolearn.klibrary.ui.android.curl;
 
 import android.content.Context;
@@ -29,11 +13,6 @@ import com.koolearn.klibrary.core.view.ZLView;
 import com.koolearn.klibrary.core.view.ZLViewEnums;
 import com.koolearn.klibrary.ui.android.view.animation.PageProvider;
 
-/**
- * OpenGL ES View.
- *
- * @author harism
- */
 public class CurlView extends GLSurfaceView implements View.OnTouchListener,
         CurlRenderer.Observer {
 
@@ -65,9 +44,10 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
     private PointF mCurlPos = new PointF();
     private int mCurlState = CURL_NONE;
 
-    protected int getCurlState(){
+    protected int getCurlState() {
         return mCurlState;
     }
+
     // Current bitmap index. This is always showed as front of right page.
     private int mCurrentIndex = 0;
 
@@ -167,7 +147,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
                 mPageCurl = curl;
                 mPageRight = right;
                 // If we were curling left page update current index.
-                if(mCurlState == CURL_LEFT) {
+                if (mCurlState == CURL_LEFT) {
                     processPage(CURL_LEFT);
                 }
             } else if (mAnimationTargetEvent == SET_CURL_TO_LEFT) {
@@ -184,7 +164,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 //                mPageCurl = curl;
 //                mPageLeft = left;
                 // If we were curling right page update current index.
-                if(mCurlState == CURL_RIGHT) {
+                if (mCurlState == CURL_RIGHT) {
                     processPage(CURL_RIGHT);
                 }
             }
@@ -587,7 +567,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 //                updatePage(mPageCurl.getTexturePage(), ZLView.PageIndex.current);
                 if (mPageProvider.hasPreviousPage()) {  //
                     updatePage(mPageCurl.getTexturePage(), ZLView.PageIndex.previous);
-                }else{
+                } else {
                     LogUtil.i("已经到第一页了 没有了");
                 }
 
@@ -723,23 +703,23 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
         mRenderer.removeCurlMesh(mPageRight);
         mRenderer.removeCurlMesh(mPageCurl);
 
-        if(mCurlState == CURL_LEFT){    // 左边往右边翻
+        if (mCurlState == CURL_LEFT) {    // 左边往右边翻
             LogUtil.i("mCurlState = CuRL_LEFT");
             pageIndex = pageIndex.getPrevious();
-        }else if(mCurlState == CURL_RIGHT){ // 右边往左边翻
+        } else if (mCurlState == CURL_RIGHT) { // 右边往左边翻
             pageIndex = pageIndex.getNext();
             LogUtil.i("mCurlState = CuRL_RIHGT");
-        }else{
+        } else {
             LogUtil.i("mCurlState = CuRL_NONE");
         }
 
-        switch (pageIndex){
+        switch (pageIndex) {
             case previous:
                 LogUtil.i("pageIndex = previous");
-                if(!mPageProvider.hasPreviousPage()){   // 前一页不存在
+                if (!mPageProvider.hasPreviousPage()) {   // 前一页不存在
                     LogUtil.i("previous---notHasPrevious");
                     updateRight(ZLViewEnums.PageIndex.current);
-                }else{
+                } else {
                     LogUtil.i("previous---hasPrevious");
                     updateCurrent(ZLViewEnums.PageIndex.current);
                     updateLeft(ZLViewEnums.PageIndex.previous);
@@ -747,10 +727,10 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
                 break;
             case next:
                 LogUtil.i("pageIndex = next");
-                if(!mPageProvider.hasNextPage()){
+                if (!mPageProvider.hasNextPage()) {
                     LogUtil.i("next---notHasNext");
                     updateRight(ZLViewEnums.PageIndex.current);
-                }else{
+                } else {
                     LogUtil.i("next---hasNext");
                     updateCurrent(ZLViewEnums.PageIndex.current);
                     updateRight(ZLViewEnums.PageIndex.next);
@@ -758,11 +738,11 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
                 break;
             case current:
                 LogUtil.i("pageIndex = current");
-                if(!mPageProvider.hasPreviousPage()){
+                if (!mPageProvider.hasPreviousPage()) {
                     LogUtil.i("current---notHasPrevious");
                     updateCurrent(pageIndex);
                     updateRight(pageIndex);
-                }else{
+                } else {
                     LogUtil.i("current---hasPrevious");
                     updateRight(pageIndex);
                     updateLeft(ZLViewEnums.PageIndex.previous);
@@ -772,7 +752,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 
     }
 
-    private void updateLeft(ZLViewEnums.PageIndex pageIndex){
+    private void updateLeft(ZLViewEnums.PageIndex pageIndex) {
 //        updatePage(mPageLeft.getTexturePage(), pageIndex);
 //        mPageLeft.setFlipTexture(true);
 //        mPageLeft.setRect(mRenderer.getPageRect(CurlRenderer.PAGE_LEFT));
@@ -782,7 +762,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 //        }
     }
 
-    private void updateRight(ZLViewEnums.PageIndex pageIndex){
+    private void updateRight(ZLViewEnums.PageIndex pageIndex) {
         updatePage(mPageRight.getTexturePage(), pageIndex);
         mPageRight.setFlipTexture(false);
         mPageRight.setRect(mRenderer.getPageRect(CurlRenderer.PAGE_RIGHT));
@@ -790,7 +770,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
         mRenderer.addCurlMesh(mPageRight);
     }
 
-    private void updateCurrent(ZLViewEnums.PageIndex pageIndex){
+    private void updateCurrent(ZLViewEnums.PageIndex pageIndex) {
         updatePage(mPageCurl.getTexturePage(), pageIndex);
 
         if (mCurlState == CURL_RIGHT) {
@@ -806,7 +786,6 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
         mPageCurl.reset();
         mRenderer.addCurlMesh(mPageCurl);
     }
-
 
 
     /**
@@ -851,8 +830,8 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
         void onSizeChanged(int width, int height);
     }
 
-    private void processPage(int state){
-        switch (state){
+    private void processPage(int state) {
+        switch (state) {
             case CURL_LEFT: // curlto right 左边往右翻
                 LogUtil.i("左边往右翻");
                 mPageProvider.shift(CURL_LEFT);

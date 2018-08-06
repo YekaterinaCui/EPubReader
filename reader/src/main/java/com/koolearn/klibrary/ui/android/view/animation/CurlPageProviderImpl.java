@@ -1,5 +1,6 @@
 package com.koolearn.klibrary.ui.android.view.animation;
 
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import com.koolearn.klibrary.core.application.ZLApplication;
@@ -22,6 +23,11 @@ public class CurlPageProviderImpl extends AnimationProvider implements PageProvi
 
     @Override
     protected void drawInternal(Canvas canvas) {
+
+    }
+
+    @Override
+    protected void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
 
     }
 

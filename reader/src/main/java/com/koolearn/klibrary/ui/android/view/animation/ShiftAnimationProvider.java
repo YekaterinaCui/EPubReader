@@ -5,40 +5,46 @@ import android.graphics.*;
 import com.koolearn.klibrary.ui.android.view.ViewUtil;
 
 public final class ShiftAnimationProvider extends SimpleAnimationProvider {
-	private final Paint myPaint = new Paint();
-	{
-		myPaint.setColor(Color.rgb(127, 127, 127));
-	}
+    private final Paint myPaint = new Paint();
 
-	public ShiftAnimationProvider(BitmapManager bitmapManager) {
-		super(bitmapManager);
-	}
+    {
+        myPaint.setColor(Color.rgb(127, 127, 127));
+    }
 
-	@Override
-	protected void drawInternal(Canvas canvas) {
-		if (myDirection.IsHorizontal) {
-			final int dX = myEndX - myStartX;
-			drawBitmapTo(canvas, dX > 0 ? dX - myWidth : dX + myWidth, 0, myPaint);
-			drawBitmapFrom(canvas, dX, 0, myPaint);
-			if (dX > 0 && dX < myWidth) {
-				canvas.drawLine(dX, 0, dX, myHeight + 1, myPaint);
-			} else if (dX < 0 && dX > -myWidth) {
-				canvas.drawLine(dX + myWidth, 0, dX + myWidth, myHeight + 1, myPaint);
-			}
-		} else {
-			final int dY = myEndY - myStartY;
-			drawBitmapTo(canvas, 0, dY > 0 ? dY - myHeight : dY + myHeight, myPaint);
-			drawBitmapFrom(canvas, 0, dY, myPaint);
-			if (dY > 0 && dY < myHeight) {
-				canvas.drawLine(0, dY, myWidth + 1, dY, myPaint);
-			} else if (dY < 0 && dY > -myHeight) {
-				canvas.drawLine(0, dY + myHeight, myWidth + 1, dY + myHeight, myPaint);
-			}
-		}
-	}
+    public ShiftAnimationProvider(BitmapManager bitmapManager) {
+        super(bitmapManager);
+    }
 
-	@Override
-	protected void setFilter() {
-		ViewUtil.setColorLevel(myPaint, myColorLevel);
-	}
+    @Override
+    protected void drawInternal(Canvas canvas) {
+        if (myDirection.IsHorizontal) {
+            final int dX = myEndX - myStartX;
+            drawBitmapTo(canvas, dX > 0 ? dX - myWidth : dX + myWidth, 0, myPaint);
+            drawBitmapFrom(canvas, dX, 0, myPaint);
+            if (dX > 0 && dX < myWidth) {
+                canvas.drawLine(dX, 0, dX, myHeight + 1, myPaint);
+            } else if (dX < 0 && dX > -myWidth) {
+                canvas.drawLine(dX + myWidth, 0, dX + myWidth, myHeight + 1, myPaint);
+            }
+        } else {
+            final int dY = myEndY - myStartY;
+            drawBitmapTo(canvas, 0, dY > 0 ? dY - myHeight : dY + myHeight, myPaint);
+            drawBitmapFrom(canvas, 0, dY, myPaint);
+            if (dY > 0 && dY < myHeight) {
+                canvas.drawLine(0, dY, myWidth + 1, dY, myPaint);
+            } else if (dY < 0 && dY > -myHeight) {
+                canvas.drawLine(0, dY + myHeight, myWidth + 1, dY + myHeight, myPaint);
+            }
+        }
+    }
+
+    @Override
+    protected void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
+        canvas.drawBitmap(footerBitmap, 0, voffset, myPaint);
+    }
+
+    @Override
+    protected void setFilter() {
+        ViewUtil.setColorLevel(myPaint, myColorLevel);
+    }
 }

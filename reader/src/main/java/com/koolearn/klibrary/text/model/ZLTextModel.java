@@ -6,6 +6,7 @@ public interface ZLTextModel {
 	String getId();
 	String getLanguage();
 
+	// 获取段落数
 	int getParagraphsNumber();
 	ZLTextParagraph getParagraph(int index);
 

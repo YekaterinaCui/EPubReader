@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -116,7 +117,6 @@ public class ZLAndroidWidget extends View implements ZLViewWidget, View.OnLongCl
                     break;
                 case curl:
                     myAnimationProvider = new CurlAnimationProvider(myBitmapManager);
-//                    myAnimationProvider = new CurlPageProviderImpl(myBitmapManager);
                     break;
                 case slide:
                     myAnimationProvider = new SlideAnimationProvider(myBitmapManager);
@@ -129,7 +129,7 @@ public class ZLAndroidWidget extends View implements ZLViewWidget, View.OnLongCl
         return myAnimationProvider;
     }
 
-    public boolean isCurlAnimation(){
+    public boolean isCurlAnimation() {
         return getAnimationProvider() instanceof CurlPageProviderImpl;
     }
 
@@ -192,11 +192,13 @@ public class ZLAndroidWidget extends View implements ZLViewWidget, View.OnLongCl
         if (view.canScroll(index)) { // 判断是否可以翻(是否有上/下一页)
             animator.scrollTo(x, y); // 一直在改变Mode的状态
             postInvalidate();
-        }else {
-//            Log.i("TAG_scrollManuallyTo","最后一页，需要购买才能继续");
-            SharedPreferences sharedPreferences = ZLAndroidApplication.getContext().getSharedPreferences("user", Context.MODE_PRIVATE);
+        } else {
+            Log.i("scrollManuallyTo", "最后一页，需要购买才能继续");
+            SharedPreferences sharedPreferences
+                    = ZLAndroidApplication.getContext()
+                    .getSharedPreferences("user", Context.MODE_PRIVATE);
             String name = sharedPreferences.getString("id", "");
-            if ("".equals(name)){
+            if ("".equals(name)) {
                 EventBus.getDefault().post(new ReaderEvent());
             }
         }
@@ -207,10 +209,12 @@ public class ZLAndroidWidget extends View implements ZLViewWidget, View.OnLongCl
         final ZLView view = ZLApplication.Instance().getCurrentView();
 
         if (pageIndex == ZLView.PageIndex.current || !view.canScroll(pageIndex)) {
-//            Log.i("TAG_startAnimatedScrolling","最后一页，需要购买才能继续");
-            SharedPreferences sharedPreferences = ZLAndroidApplication.getContext().getSharedPreferences("user", Context.MODE_PRIVATE);
+            Log.i("startAnimatedScrolling", "最后一页，需要购买才能继续");
+            SharedPreferences sharedPreferences
+                    = ZLAndroidApplication.getContext()
+                    .getSharedPreferences("user", Context.MODE_PRIVATE);
             String name = sharedPreferences.getString("id", "");
-            if ("".equals(name)){
+            if ("".equals(name)) {
                 EventBus.getDefault().post(new ReaderEvent());
             }
             return;
@@ -426,7 +430,7 @@ public class ZLAndroidWidget extends View implements ZLViewWidget, View.OnLongCl
                     }
                     if (!myPendingPress) {
                         // 开始切换 surfaceview
-                        if(isCurlAnimation()){
+                        if (isCurlAnimation()) {
                             ZLApplication.Instance().getMyWindow().hideViewWidget(true);
                             return true;
                         }

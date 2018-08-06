@@ -128,10 +128,11 @@ public class BookModel {
              * 最少试读章节不能小于两章，不能大于5章
              */
             int chapterCount = TOCTree.subtrees().size();//章节数量
-            int limitCount = (int) (chapterCount * 0.2);//试读章节数
-            limitCount = limitCount < 2 ? 2 : limitCount;
-            limitCount = limitCount > 5 ? 5 : limitCount;
-            limitCount = limitCount > chapterCount - 1 ? chapterCount - 1 : limitCount;
+//            int limitCount = (int) (chapterCount * 0.2);//试读章节数
+//            limitCount = limitCount < 2 ? 2 : limitCount;
+//            limitCount = limitCount > 5 ? 5 : limitCount;
+//            limitCount = limitCount > chapterCount - 1 ? chapterCount - 1 : limitCount;
+            int limitCount = chapterCount - 1;
             /**
              * 获取试读章节的最后一段，通过获取试读章节下一章的第一段然后减去1，就是试读章节的最后一段，
              * limitcount是从1开始计数

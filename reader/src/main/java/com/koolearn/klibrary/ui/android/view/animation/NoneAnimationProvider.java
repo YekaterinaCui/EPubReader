@@ -51,7 +51,7 @@ public final class NoneAnimationProvider extends AnimationProvider {
             return ZLViewEnums.PageIndex.current;
         }
         //y 判断翻前/后/不翻页
-        LogUtil.i13("myDirection:"+myDirection);
+        LogUtil.i13("myDirection:" + myDirection);
         switch (myDirection) {
             case rightToLeft:
                 return myStartX < x ? ZLViewEnums.PageIndex.previous : ZLViewEnums.PageIndex.next;
@@ -65,10 +65,10 @@ public final class NoneAnimationProvider extends AnimationProvider {
         return ZLViewEnums.PageIndex.current;
     }
 
-//    @Override
-//    public void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
-//        canvas.drawBitmap(footerBitmap, 0, voffset, myPaint);
-//    }
+    @Override
+    public void drawFooterBitmapInternal(Canvas canvas, Bitmap footerBitmap, int voffset) {
+        canvas.drawBitmap(footerBitmap, 0, voffset, myPaint);
+    }
 
     @Override
     protected void setFilter() {
