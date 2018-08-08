@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EpubRead-master.iml" filepath="$PROJECT_DIR$/EpubRead-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPubReader.iml" filepath="$PROJECT_DIR$/EPubReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/reader/reader.iml" filepath="$PROJECT_DIR$/reader/reader.iml" />
     </modules>
